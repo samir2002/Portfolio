@@ -1,3 +1,19 @@
+/* Ajoutez ceci en haut de votre App.css */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.app {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 :root {
   --primary-color: #4F8DFB;
   --primary-light: #6da1ff;
