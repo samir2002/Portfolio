@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './App.css';
 
 // Importez vos images
-import myPhoto from './assets/photo.jpg';
+import myPhoto from './assets/Photo.jpg';
 import coverImg from './assets/Cover.jpg';
 
 const projects = [
