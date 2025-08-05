@@ -600,6 +600,73 @@ body.dark-mode .footer {
   }
 }
 
+/* Experience Professionnelle */
+.experience {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.experience h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.experience-item {
+  background: var(--light-card);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .experience-item {
+  background: var(--dark-card);
+}
+
+.experience-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(79, 141, 251, 0.3);
+}
+
+.experience-item h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.experience-item p {
+  color: var(--gray);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+body.dark-mode .experience-item p {
+  color: var(--dark-text);
+}
+
 /* Pour les écrans mobiles */
 @media (max-width: 768px) {
   .photo {
